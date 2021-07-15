@@ -13,6 +13,9 @@
 		ABA6355026A0AA0B00A47CE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA6354F26A0AA0B00A47CE8 /* Preview Assets.xcassets */; };
 		ABA6355B26A0AA0B00A47CE8 /* RandomNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6355A26A0AA0B00A47CE8 /* RandomNoteTests.swift */; };
 		ABA6356626A0AA0B00A47CE8 /* RandomNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA6356526A0AA0B00A47CE8 /* RandomNoteUITests.swift */; };
+		ABA6358A26A0B15500A47CE8 /* EvernoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA6358826A0B0D900A47CE8 /* EvernoteSDK.framework */; };
+		ABA6358C26A0B16000A47CE8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA6358B26A0B16000A47CE8 /* MobileCoreServices.framework */; };
+		ABA6358E26A0B17000A47CE8 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA6358D26A0B17000A47CE8 /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,27 @@
 			remoteGlobalIDString = ABA6354426A0AA0900A47CE8;
 			remoteInfo = RandomNote;
 		};
+		ABA6358326A0B0D900A47CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA6357D26A0B0D900A47CE8 /* evernote-sdk-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0BB3D1AD1524ED96001C4534;
+			remoteInfo = "evernote-sdk-ios";
+		};
+		ABA6358526A0B0D900A47CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA6357D26A0B0D900A47CE8 /* evernote-sdk-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 865C383118F8BA2400ECB2BA;
+			remoteInfo = ENSDK;
+		};
+		ABA6358726A0B0D900A47CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA6357D26A0B0D900A47CE8 /* evernote-sdk-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D9D60B71E27940A001740D8;
+			remoteInfo = EvernoteSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +69,9 @@
 		ABA6356126A0AA0B00A47CE8 /* RandomNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA6356526A0AA0B00A47CE8 /* RandomNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNoteUITests.swift; sourceTree = "<group>"; };
 		ABA6356726A0AA0B00A47CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABA6357D26A0B0D900A47CE8 /* evernote-sdk-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "evernote-sdk-ios.xcodeproj"; path = "../evernote-cloud-sdk-ios/evernote-sdk-ios.xcodeproj"; sourceTree = "<group>"; };
+		ABA6358B26A0B16000A47CE8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ABA6358D26A0B17000A47CE8 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +79,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA6358E26A0B17000A47CE8 /* libxml2.tbd in Frameworks */,
+				ABA6358C26A0B16000A47CE8 /* MobileCoreServices.framework in Frameworks */,
+				ABA6358A26A0B15500A47CE8 /* EvernoteSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +105,12 @@
 		ABA6353C26A0AA0900A47CE8 = {
 			isa = PBXGroup;
 			children = (
+				ABA6357D26A0B0D900A47CE8 /* evernote-sdk-ios.xcodeproj */,
 				ABA6354726A0AA0900A47CE8 /* RandomNote */,
 				ABA6355926A0AA0B00A47CE8 /* RandomNoteTests */,
 				ABA6356426A0AA0B00A47CE8 /* RandomNoteUITests */,
 				ABA6354626A0AA0900A47CE8 /* Products */,
+				ABA6358926A0B15500A47CE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +160,25 @@
 				ABA6356726A0AA0B00A47CE8 /* Info.plist */,
 			);
 			path = RandomNoteUITests;
+			sourceTree = "<group>";
+		};
+		ABA6357E26A0B0D900A47CE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABA6358426A0B0D900A47CE8 /* libevernote-sdk-ios.a */,
+				ABA6358626A0B0D900A47CE8 /* ENSDK.framework */,
+				ABA6358826A0B0D900A47CE8 /* EvernoteSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA6358926A0B15500A47CE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABA6358D26A0B17000A47CE8 /* libxml2.tbd */,
+				ABA6358B26A0B16000A47CE8 /* MobileCoreServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +270,12 @@
 			mainGroup = ABA6353C26A0AA0900A47CE8;
 			productRefGroup = ABA6354626A0AA0900A47CE8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ABA6357E26A0B0D900A47CE8 /* Products */;
+					ProjectRef = ABA6357D26A0B0D900A47CE8 /* evernote-sdk-ios.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ABA6354426A0AA0900A47CE8 /* RandomNote */,
@@ -227,6 +284,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ABA6358426A0B0D900A47CE8 /* libevernote-sdk-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libevernote-sdk-ios.a";
+			remoteRef = ABA6358326A0B0D900A47CE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABA6358626A0B0D900A47CE8 /* ENSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ENSDK.framework;
+			remoteRef = ABA6358526A0B0D900A47CE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABA6358826A0B0D900A47CE8 /* EvernoteSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EvernoteSDK.framework;
+			remoteRef = ABA6358726A0B0D900A47CE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ABA6354326A0AA0900A47CE8 /* Resources */ = {
